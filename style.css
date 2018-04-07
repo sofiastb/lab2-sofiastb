@@ -1,4 +1,7 @@
 html, body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -12,12 +15,68 @@ img {
   object-fit: cover;
 }
 
+h1, h2 {
+  align-self: center;
+  color: white;
+  justify-content: center;
+  margin: 0;
+  text-shadow: 0px 0px 30px #000000;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h3 {
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+  margin: 4rem 0;
+}
+
+label {
+  height: 90%;
+  width: 100%;
+}
+
+.cover {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  background-image: url(http://030mm-photography.com/wp-content/uploads/2015/08/paris-skyline-panorama-blue-hour-blaue-stunde-nachtaufnahme-nighthsot-eiffelturm-tower.jpg);
+  height: 40vh;
+  width: 100%;
+}
+
 /* Questions */
-.question {
+#questions {
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1rem;
+}
+
+.question {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20vh;
+  width: 70%;
 }
 
 .answers {
@@ -29,26 +88,117 @@ img {
   align-self: center;
   display: flex;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 5vh;
 }
 
 .answer {
-  height: 33vh;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  margin: 0 1rem;
+  transition: .5s;
   width: 33%;
 }
 
-#kaf img, #fashion img, #study img, #emoji img, #colors img {
+.answer:last-child {
+  margin-right: 0;
+}
+
+.answer:first-child {
+  margin-left: 0;
+}
+
+.answer:hover {
+  box-shadow: 0px 0px 30px grey;
+}
+
+.q-h {
+  background-size: cover;
   height: 25vh;
-  width: 15vw;
+  width: 100%;
+}
+
+#kaf-h {
+  background-image: url(http://www.dartmouth.edu/~dartmouthdirect/wp-content/uploads/KAF.jpg);
+}
+
+#major-h {
+  background-image: url(https://www.turieconline.sk/media/k2/items/cache/4911e860a05b06ac6835746335d2c0e8_XL.jpg);
+}
+
+#french-h {
+  background-image: url(http://www.vivaiacciarri.it/immagini/fr.jpg);
+}
+
+#fashion-h {
+  background-image: url(https://lovelace-media.imgix.net/getty/475561119.jpg);
+}
+
+#baudelaire-h {
+  background-image: url(https://www.napoleon.org/wp-content/uploads/2017/07/lettre_de_charles_baudelaire_a_limperatrice_eugenie_1_-_archives_nationales_-_ae-ii-1980_deuxfaces.jpg);
+}
+
+#study-h {
+  background-image: url(https://img.wonderhowto.com/img/23/79/63569910524689/0/attention-all-neat-freaks-messy-desk-can-actually-make-you-more-productive-work.1280x600.jpg);
+}
+
+#emoji-h {
+  background-image: url(http://emojikeyboards.com/wp-content/uploads/2015/01/qwerky.png);
+}
+
+#movies-h {
+  background-image: url(https://fortunedotcom.files.wordpress.com/2017/08/movies.gif);
+}
+
+#colors-h {
+  background-image: url(https://www.finearttips.com/wp-content/uploads/2009/11/palette.jpg);
+}
+
+#kanye-h {
+  background-image: url(http://i.imgur.com/t5J9fiF.jpg);
+}
+
+#french label, #baudelaire label, #kanye label {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+}
+
+#emoji label {
+  height: 33vh;
+  padding: 1rem;
+  width: 100%;
+}
+
+#emoji img {
+  height: auto;
+  width: 80%;
+}
+
+#fashion label {
+  display: flex;
+  justify-content: center;;
+}
+
+#movies label {
+  height: 27vh;
+}
+
+#kaf img, #fashion img, #study img, #colors img {
+  height: 40vh;
+  width: 100%;
 }
 
 #major img, #movies img {
-  width: 15vw;
   height: 20vh;
+  width: 100%;
 }
 
 #fashion .row:nth-last-child(2) .answer:nth-last-child(2) img {
-  height: auto;
-  width: 15vw;
+  align-self: center;
+  height: 21vh;
 }

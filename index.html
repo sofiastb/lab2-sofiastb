@@ -7,719 +7,745 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- JS -->
     <script src="main.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:800" rel="stylesheet">
   </head>
   <body>
-    <h1>Which Parisian landmark are you?</h1>
+    <div class="cover" id="title">
+          <h1>Which Parisian landmark are you?</h1>
+    </div>
     <p>"Paris is always a good idea."</p>
     <!-- KAF Q -->
-    <section class="question" id="kaf">
-      <h2 class="question-h">What's your go-to KAF order?</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/113581.jpg?output-format=webp&output-quality=60&resize=1000:*" />
-              <input type="radio" id="kaf-q" value="chocolate-croissant">
-            </label>
-            <h3>Chocolate Croissant, duh.</h3>
+    <div id="questions">
+      <section class="question" id="kaf">
+        <div class="cover q-h" id="kaf-h">
+          <h2>What's your go-to KAF order?</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/113581.jpg?output-format=webp&output-quality=60&resize=1000:*" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="chocolate-croissant">
+              </label>
+              <h3>Chocolate Croissant, duh.</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr02/13/18/enhanced-27521-1397428713-14.jpg?downsize=715:*&output-format=auto&output-quality=auto" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="brie-apple">
+              </label>
+              <h3>Brie and Apple Sandwich</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://foodimentaryguy.files.wordpress.com/2017/02/caffecoffea-com.jpg?w=600" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="cafe-lait">
+              </label>
+              <h3>Café au Lait, please!</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="http://www.maisymak.com/wp-content/uploads/2016/07/unnamed-1.jpg" />
-              <input type="radio" id="kaf-q" value="brie-apple">
-            </label>
-            <h3>Brie and Apple Sandwich</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://lh3.googleusercontent.com/Io4HPN9UAZCc-E1cUWX0I0iW5sPuaVtWGbbQXnA5Sat-cv_MessztJdYGMlMMQWxV7mPb_xCi3xEH2hZ7AQ0oQ" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="turkey">
+              </label>
+              <h3>Turkey and Cheese Sandwich</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqo8q7WBP6ZHYk9DNTCdbQ1IJQWSijTZ8h3TFaOf-J5LDDQsD" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="tofu">
+              </label>
+              <h3>Tofu</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://newengland.com/wp-content/uploads/2016/01/vermont-maple-salad.jpg" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="new-england">
+              </label>
+              <h3>A New England Salad</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://foodimentaryguy.files.wordpress.com/2017/02/caffecoffea-com.jpg?w=600" />
-              <input type="radio" id="kaf-q" value="cafe-lait">
-            </label>
-            <h3>Café au Lait, please!</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://www.healthline.com/hlcmsresource/images/AN_images/green-tea-white-mug-1296x728.jpg" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="green-tea">
+              </label>
+              <h3>Green tea 😌</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://c2.staticflickr.com/8/7167/6483256215_5e13cb79d0_b.jpg" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="foco">
+              </label>
+              <h3>FoCo 4 Lyfe!!1!</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media.tenor.com/images/ef67c19e7ad139ea0fe35381dd1c1c92/tenor.gif" />
+                <input type="radio" id="kaf-q" name="kaf-order" value="lol-no">
+              </label>
+              <h3>No waiting in line for me!</h3>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://lh3.googleusercontent.com/Io4HPN9UAZCc-E1cUWX0I0iW5sPuaVtWGbbQXnA5Sat-cv_MessztJdYGMlMMQWxV7mPb_xCi3xEH2hZ7AQ0oQ" />
-              <input type="radio" id="kaf-q" value="turkey">
-            </label>
-            <h3>Turkey and Cheese Sandwich (do it for the protein)</h3>
+      </section>
+      <!-- Major Q -->
+      <section class="question" id="major">
+        <div class="cover q-h" id="major-h">
+          <h2 class="question-h">What's your major?</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://media.giphy.com/media/1230rTAtEjLyLu/giphy.gif" />
+                <input type="radio" id="major-q" value="cs">
+              </label>
+              <h3>Computer Science</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media1.tenor.com/images/1359ccb442c9ed7aa8eef1df01935591/tenor.gif?itemid=7551542" />
+                <input type="radio" id="major-q" value="unclear">
+              </label>
+              <h3>Unclear</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://i.imgur.com/tOTWasc.jpg" />
+                <input type="radio" id="major-q" value="uw-basket">
+              </label>
+              <h3>Underwater Basket Weaving</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqo8q7WBP6ZHYk9DNTCdbQ1IJQWSijTZ8h3TFaOf-J5LDDQsD" />
-              <input type="radio" id="kaf-q" value="tofu">
-            </label>
-            <h3>Tofu</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://i.giphy.com/zrNSLJ1zhnlcc.gif" />
+                <input type="radio" id="major-q" value="english">
+              </label>
+              <h3>English</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media.giphy.com/media/NbcaLiketKAfK/giphy.gif" />
+                <input type="radio" id="major-q" value="french">
+              </label>
+              <h3>French</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931" />
+                <input type="radio" id="major-q" value="math">
+              </label>
+              <h3>Math</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://newengland.com/wp-content/uploads/2016/01/vermont-maple-salad.jpg" />
-              <input type="radio" id="kaf-q" value="new-england">
-            </label>
-            <h3>A New England Salad</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="http://bestanimations.com/Science/Physics/prism-light-dispersion-waves-animation-1.gif" />
+                <input type="radio" id="major-q" value="physics">
+              </label>
+              <h3>Physics</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media1.tenor.com/images/a910a9acc27c7b4bac1085bd52afa28f/tenor.gif?itemid=5206303" />
+                <input type="radio" id="major-q" value="na">
+              </label>
+              <h3>I don't even go here</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media.giphy.com/media/Y0O9TgOM9hoBy/giphy.gif" />
+                <input type="radio" id="major-q" value="econ">
+              </label>
+              <h3>Economics</h3>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://www.healthline.com/hlcmsresource/images/AN_images/green-tea-white-mug-1296x728.jpg" />
-              <input type="radio" id="kaf-q" value="green-tea">
-            </label>
-            <h3>Green tea 😌</h3>
+      </section>
+      <!-- French Level -->
+      <section class="question" id="french">
+        <div class="cover q-h" id="french-h">
+          <h2 class="question-h">Rate your level of French:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>Baguette, croissant, café - I know all the essentials</h3>
+                <input type="radio" id="french-q" value="essentials">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>Parlez-vous français?</h3>
+                <input type="radio" id="french-q" value="pv">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>¡Hola!</h3>
+                <input type="radio" id="french-q" value="hola">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://c2.staticflickr.com/8/7167/6483256215_5e13cb79d0_b.jpg" />
-              <input type="radio" id="kaf-q" value="foco">
-            </label>
-            <h3>FoCo 4 Lyfe!!1!</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>I took a French class in high school</h3>
+                <input type="radio" id="=french-q" value="hs">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>I'm actually French</h3>
+                <input type="radio" id="french-q" value="me-french">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>Basically fluent, ngl.</h3>
+                <input type="radio" id="french-q" value="fluent">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://media.tenor.com/images/ef67c19e7ad139ea0fe35381dd1c1c92/tenor.gif" />
-              <input type="radio" id="kaf-q" value="lol-no">
-            </label>
-            <h3>Do I look like I want to wait an hour in line?!</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>I went on an LSA or FSP</h3>
+                <input type="radio" id="=french-q" value="fsp">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>C'est la vie</h3>
+                <input type="radio" id="french-q" value="clv">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>
+                  Je suis belle, ô mortels! comme un rêve de pierre,<br/>
+                  Et mon sein, où chacun s'est meurtri tour à tour,<br/>
+                  Est fait pour inspirer au poète un amour<br/>
+                  Eternel et muet ainsi que la matière.
+                </h3>
+                <input type="radio" id="french-q" value="fluent">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Major Q -->
-    <section class="question" id="major">
-      <h2 class="question-h">What's your major?</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://media.giphy.com/media/1230rTAtEjLyLu/giphy.gif" />
-              <input type="radio" id="major-q" value="cs">
-            </label>
-            <h3>Computer Science *cough*Hacking*cough*</h3>
+      </section>
+      <!-- French brand -->
+      <section class="question" id="fashion">
+        <div class="cover q-h" id="fashion-h">
+          <h2 class="question-h">Choose a French fashion house:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://cdn7.bigcommerce.com/s-sq9zkarfah/images/stencil/original/products/74772/136842/Chanel-Logo-Vinyl-Decal-Sticker__73784.1510914083.jpg?c=2&imbypass=on" />
+                <input type="radio" id="fashion-q" value="chanel">
+              </label>
+              <h3>Chanel</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://luxevn.com/wp-content/uploads/2012/04/Dior_logo1.jpg" />
+                <input type="radio" id="fashion-q" value="dior">
+              </label>
+              <h3>Dior</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://fimgs.net/images/dizajneri/o.99.jpg" />
+                <input type="radio" id="fashion-q" value="ysl">
+              </label>
+              <h3>Saint Laurent</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://media1.tenor.com/images/1359ccb442c9ed7aa8eef1df01935591/tenor.gif?itemid=7551542" />
-              <input type="radio" id="major-q" value="unclear">
-            </label>
-            <h3>Unclear</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://i.pinimg.com/originals/f7/0a/66/f70a660dae36b812e1de32df9fe95e1e.jpg" />
+                <input type="radio" id="fashion-q" value="balmain">
+              </label>
+              <h3>Balmain</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://www.reactiongifs.com/r/2013/07/too-much-fashion.gif" />
+                <input type="radio" id="fashion-q" value="what-fashion">
+              </label>
+              <h3>Ummm, I don't do fashion.</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/louis-vuitton-logo-hesti-seneng.jpg" />
+                <input type="radio" id="fashion-q" value="lv">
+              </label>
+              <h3>Louis Vuitton</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://i.imgur.com/tOTWasc.jpg" />
-              <input type="radio" id="major-q" value="uw-basket">
-            </label>
-            <h3>Underwater Basket Weaving</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://i.pinimg.com/originals/42/db/94/42db9482c67285d60906050887a124d5.jpg" />
+                <input type="radio" id="fashion-q" value="goyard">
+              </label>
+              <h3>Goyard</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://i.pinimg.com/originals/4b/46/0a/4b460acf7267393f55e3c5d58641497e.jpg" />
+                <input type="radio" id="fashion-q" value="hermes">
+              </label>
+              <h3>Hermès</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstJwaV63fnU52fvlmxMP8mMD-gKaT4UFXjvnEgdRPKArr-UBG" />
+                <input type="radio" id="fashion-q" value="givency">
+              </label>
+              <h3>Givenchy</h3>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://i.giphy.com/zrNSLJ1zhnlcc.gif" />
-              <input type="radio" id="major-q" value="english">
-            </label>
-            <h3>English</h3>
+      </section>
+      <!-- Baudelaire quote -->
+      <section class="question" id="baudelaire">
+        <div class="cover q-h" id="baudelaire-h">
+          <h2 class="question-h">Choose a Baudelaire quote:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>“The beautiful is always bizarre.”</h3>
+                <input type="radio" id="baudelaire-q" value="beautiful-bizzare">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“I am a cemetery by the moon unblessed.”</h3>
+                <input type="radio" id="baudelaire-q" value="cemetary">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“A multitude of small delights constitute happiness”</h3>
+                <input type="radio" id="baudelaire-q" value="delights">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://media.giphy.com/media/NbcaLiketKAfK/giphy.gif" />
-              <input type="radio" id="major-q" value="french">
-            </label>
-            <h3>French</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>“I have felt the wind on the wing of madness.”</h3>
+                <input type="radio" id="baudelaire-q" value="wind">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“Even when she walks one would believe that she dances.”</h3>
+                <input type="radio" id="baudelaire-q" value="dance">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“An oasis of horror in a desert of boredom.”</h3>
+                <input type="radio" id="baudelaire-q" value="oasis">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://media1.tenor.com/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif?itemid=6081931" />
-              <input type="radio" id="major-q" value="math">
-            </label>
-            <h3>Math</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>"It is the hour to be drunken!"</h3>
+                <input type="radio" id="baudelarie-q" value="drunk">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“Music fathoms the sky.”</h3>
+                <input type="radio" id="baudelaire-q" value="music">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“Common sense tells us that the things of the earth exist only a little, and that true reality is only in dreams.”</h3>
+                <input type="radio" id="french-q" value="fluent">
+              </label>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="http://bestanimations.com/Science/Physics/prism-light-dispersion-waves-animation-1.gif" />
-              <input type="radio" id="major-q" value="physics">
-            </label>
-            <h3>Physics</h3>
+      </section>
+      <!-- Study spot -->
+      <section class="question" id="study">
+        <div class="cover q-h" id="study-h">
+          <h2 class="question-h">What's your favorite study spot?</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://home.dartmouth.edu/sites/default/files/styles/header_image/public/sanborn-library-slide_0.jpg?itok=3hiDbq1q" />
+                <input type="radio" id="study-q" value="sanborn">
+              </label>
+              <h3>Sanborn</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://i.imgur.com/hIZcJUu.gif" />
+                <input type="radio" id="study-q" value="what-studying">
+              </label>
+              <h3>Studying, what's that??</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF62_hVTHCHL5zwqJA9MtcM0oozJnQT3y-CPjXUVi9rdfujjn5eA" />
+                <input type="radio" id="study-q" value="blobby">
+              </label>
+              <h3>Blobby</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://media1.tenor.com/images/a910a9acc27c7b4bac1085bd52afa28f/tenor.gif?itemid=5206303" />
-              <input type="radio" id="major-q" value="na">
-            </label>
-            <h3>I don't even go here</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://www.vsba.com/wp-content/gallery/dartmouth-baker-berry-library/dartmouth-baker-berry-library-03.jpg" />
+                <input type="radio" id="study-q" value="ffb">
+              </label>
+              <h3>FFB</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://www.dartmouth.edu/~gallery/seasons/spring/images/0403-2.jpg" />
+                <input type="radio" id="study-q" value="green">
+              </label>
+              <h3>The Green</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://www.dartmouth.edu/~dartmouthdirect/wp-content/uploads/14194395246_27c835a2c9_k-1024x683.jpg" />
+                <input type="radio" id="study-q" value="sudikoff">
+              </label>
+              <h3>Sudikoff</h3>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://media.giphy.com/media/Y0O9TgOM9hoBy/giphy.gif" />
-              <input type="radio" id="major-q" value="econ">
-            </label>
-            <h3>Economics</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://www.pcconstruction.com/assets/education-and-campus/DartmouthCollege-Hitchcock-001.jpg" />
+                <input type="radio" id="study-q" value="room">
+              </label>
+              <h3>My room</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://s3-media2.fl.yelpcdn.com/bphoto/NAXUjGHyvtN1bzTQ2bR8dA/348s.jpg" />
+                <input type="radio" id="study-q" value="starbucks">
+              </label>
+              <h3>Starbucks, for the bougie</h3>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://i1.kym-cdn.com/photos/images/original/001/218/908/247.gif" />
+                <input type="radio" id="study-q" value="genuis">
+              </label>
+              <h3>I don't need to study</h3>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- French Level -->
-    <section class="question" id="french">
-      <h2 class="question-h">Which option below best describes your French proficiency?</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>Baguette, croissant, café - I know all the essentials</h3>
-              <input type="radio" id="french-q" value="essentials">
-            </label>
+      </section>
+      <!-- Emoji -->
+      <section class="question" id="emoji">
+        <div class="cover q-h" id="emoji-h">
+          <h2 class="question-h">Pick an emoji:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sunglasses_Emoji_be26cc0a-eef9-49e5-8da2-169bb417cc0b_large.png?v=1480481057" />
+                <input type="radio" id="emoji-q" value="sunglasses">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Peach_Emoji_large.png?v=1480481064" />
+                <input type="radio" id="emoji-q" value="peach">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Loudly_Crying_Face_Emoji_large.png?v=1480481054" />
+                <input type="radio" id="emoji-q" value="crying">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <h3>Parlez-vous français?</h3>
-              <input type="radio" id="french-q" value="pv">
-            </label>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="http://www.pngall.com/wp-content/uploads/2016/06/Trash-Can-PNG-Image.png" />
+                <input type="radio" id="emoji-q" value="trash">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://www.magic-emoji.com/emoji/images/275_emoji_iphone_evergreen_tree.png" />
+                <input type="radio" id="emoji-q" value="tree">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smirk_Face_Emoji_large.png?v=1480481057" />
+                <input type="radio" id="emoji-q" value="smirk">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <h3>¡Hola!</h3>
-              <input type="radio" id="french-q" value="hola">
-            </label>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Thumbs_Up_Sign_Emoji_Icon_ios10_grande.png?v=1513336433" />
+                <input type="radio" id="emoji-q" value="thumbs-up">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://i.pinimg.com/originals/6c/ce/aa/6cceaa570a325131aee10e54b96ab8eb.png" />
+                <input type="radio" id="emoji-q" value="money">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Praying_Emoji_ios10_020ec88e-ee33-496d-a95a-df23243cebf4_grande.png?v=1513249397" />
+                <input type="radio" id="emoji-q" value="clap">
+              </label>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>I took a French class in high school</h3>
-              <input type="radio" id="=french-q" value="hs">
-            </label>
+      </section>
+      <!-- Frenchy Movie -->
+      <section class="question" id="movies">
+        <div class="cover q-h" id="movies-h">
+          <h2 class="question-h">Pick a movie set in France or Paris:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="http://mrwgifs.com/wp-content/uploads/2013/07/I-Will-Find-You-And-I-Will-Kill-You-Liam-Neeson-In-Taken.gif" />
+                <input type="radio" id="movie-q" value="taken">
+                <h3>Taken</h3>
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://2.bp.blogspot.com/-CyGrv3qv-1g/UyX4mGxxsEI/AAAAAAAADt0/-BwVv0qciZs/s1600/tumblr_mwbf1tOhtm1sc6mj7o1_500.gif" />
+                <input type="radio" id="movie-q" value="ratatouille">
+                <h3>Ratatouille</h3>
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media.giphy.com/media/qxqbogi4xSzFC/giphy.gif" />
+                <input type="radio" id="movie-q" value="amelie">
+                <h3>Amélie</h3>
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <h3>I'm actually French</h3>
-              <input type="radio" id="french-q" value="me-french">
-            </label>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="http://images4.fanpop.com/image/photos/24200000/Johnny-Depp-as-Roux-in-Chocolat-johnny-depp-24209184-500-200.gif" />
+                <input type="radio" id="movie-q" value="taken">
+                <h3>Chocolat</h3>
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://i1.wp.com/setinparis.com/wp-content/uploads/2017/12/SWP2l.gif?fit=500%2C269&ssl=1" />
+                <input type="radio" id="movie-q" value="midnight">
+                <h3>Midnight in Paris</h3>
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://78.media.tumblr.com/32e0871694cee7bae54fb267e88aac1f/tumblr_otdqhxdnJy1qkbx7ao1_500.gif" />
+                <input type="radio" id="movie-q" value="dunkirk">
+                <h3>Dunkirk</h3>
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <h3>Basically fluent, ngl.</h3>
-              <input type="radio" id="french-q" value="fluent">
-            </label>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="http://digitalspyuk.cdnds.net/16/35/480x202/gallery-1472742122-moulin-rouge.gif" />
+                <input type="radio" id="movie-q" value="moulin-rouge">
+                <h3>Moulin Rouge</h3>
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://images.amcnetworks.com/ifc.com/wp-content/uploads/2016/02/Jason-Bourne-3.gif" />
+                <input type="radio" id="movie-q" value="bourne">
+                <h3>The Bourne Identity</h3>
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://media.giphy.com/media/UB10xM91wKCvS/giphy.gif" />
+                <input type="radio" id="movie-q" value="hunchback">
+                <h3>The Hunchback of Notre Dame</h3>
+              </label>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>I went on an LSA or FSP</h3>
-              <input type="radio" id="=french-q" value="fsp">
-            </label>
+      </section>
+      <!-- Color -->
+      <section class="question" id="colors">
+        <div class="cover q-h" id="colors-h">
+          <h2 class="question-h">Choose a color:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://i.pinimg.com/736x/36/00/44/3600446e1e44740e8e4bf370656c769b--fashion-heels-essie.jpg" />
+                <input type="radio" id="color-q" value="red">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://vignette.wikia.nocookie.net/joke-battles/images/5/5a/Black.jpg/revision/latest?cb=20161223050425" />
+                <input type="radio" id="color-q" value="black">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="http://www.solidbackgrounds.com/images/2880x1800/2880x1800-royal-blue-traditional-solid-color-background.jpg" />
+                <input type="radio" id="color-q" value="royal">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <h3>C'est la vie</h3>
-              <input type="radio" id="french-q" value="clv">
-            </label>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://cdn.shopify.com/s/files/1/0182/8937/products/Pastel_Yellow_Cotton_Necktie_2_800x.jpg?v=1442382475" />
+                <input type="radio" id="color-q" value="yellow">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0313/0881/rrOff-white_F6ECC3_matches_Fretting-for-Klimt-on-off-white_shop_preview.jpg" />
+                <input type="radio" id="color-q" value="off">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://s3.amazonaws.com/cdn.yourartsupplies.com/images/large/olive-green-lite.jpg" />
+                <input type="radio" id="color-q" value="olive">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <h3>
-                Je suis belle, ô mortels! comme un rêve de pierre,<br/>
-                Et mon sein, où chacun s'est meurtri tour à tour,<br/>
-                Est fait pour inspirer au poète un amour<br/>
-                Eternel et muet ainsi que la matière.
-              </h3>
-              <input type="radio" id="french-q" value="fluent">
-            </label>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <img src="https://static1.squarespace.com/static/588bab1086e6c0ffe0e62b3a/588bbb3459cc68c61c882d1c/588de2009f74563ea54ab42c/1485693441134/light+blue.jpg?format=500w" />
+                <input type="radio" id="color-q" value="blue">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://i.pinimg.com/originals/98/c5/c2/98c5c2472423a96af95eed38d168943d.png" />
+                <input type="radio" id="color-q" value="orange">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <img src="https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0490/1184/g_lilac_solild_shop_preview.jpg" />
+                <input type="radio" id="color-q" value="purple">
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- French brand -->
-    <section class="question" id="fashion">
-      <h2 class="question-h">Choose a French fashion house:</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://cdn7.bigcommerce.com/s-sq9zkarfah/images/stencil/original/products/74772/136842/Chanel-Logo-Vinyl-Decal-Sticker__73784.1510914083.jpg?c=2&imbypass=on" />
-              <input type="radio" id="fashion-q" value="chanel">
-            </label>
-            <h3>Chanel</h3>
+      </section>
+      <!-- Pick a Kanye lyric -->
+      <section class="question" id="kanye">
+        <div class="cover q-h" id="kanye-h">
+          <h2 class="question-h">Choose a Kanye lyric:</h2>
+        </div>
+        <div class="answers">
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>“Bought more jewelry, more Louis V., my momma couldn’t get through to me”</h3>
+                <input type="radio" id="kanye-q" value="louis-v">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“Let’s go on a living free, they say the best things in life are free”</h3>
+                <input type="radio" id="kanye-q" value="free">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“I know I act a fool but I promise you I’m going back to school”</h3>
+                <input type="radio" id="kanye-q" value="fool">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://luxevn.com/wp-content/uploads/2012/04/Dior_logo1.jpg" />
-              <input type="radio" id="fashion-q" value="dior">
-            </label>
-            <h3>Dior</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>“You got a new friend, well I got homies, but in the end it’s still so lonely”</h3>
+                <input type="radio" id="kanye-q" value="lonely">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“We at war, we at war with terrorism, racism, but most of all, we at war with ourselves”</h3>
+                <input type="radio" id="kanye-q" value="war">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“I’ll never be a picture-perfect Beyoncé”</h3>
+                <input type="radio" id="kanye-q" value="beyonce">
+              </label>
+            </div>
           </div>
-          <div class="answer">
-            <label>
-              <img src="https://fimgs.net/images/dizajneri/o.99.jpg" />
-              <input type="radio" id="fashion-q" value="ysl">
-            </label>
-            <h3>Saint Laurent</h3>
+          <div class="row">
+            <div class="answer">
+              <label>
+                <h3>“I am a God, even though I’m a man of God, my whole life in the hand of God”</h3>
+                <input type="radio" id="kanye-q" value="god">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“Reach for the stars so if you fall you land on a cloud”</h3>
+                <input type="radio" id="kanye-q" value="cloud">
+              </label>
+            </div>
+            <div class="answer">
+              <label>
+                <h3>“Back before anybody wanted K. West beats, me and my girl split the bucket at KFC”</h3>
+                <input type="radio" id="kanye-q" value="kfc">
+              </label>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://i.pinimg.com/originals/f7/0a/66/f70a660dae36b812e1de32df9fe95e1e.jpg" />
-              <input type="radio" id="fashion-q" value="balmain">
-            </label>
-            <h3>Balmain</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://www.reactiongifs.com/r/2013/07/too-much-fashion.gif" />
-              <input type="radio" id="fashion-q" value="what-fashion">
-            </label>
-            <h3>Ummm, I don't do fashion.</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/louis-vuitton-logo-hesti-seneng.jpg" />
-              <input type="radio" id="fashion-q" value="lv">
-            </label>
-            <h3>Louis Vuitton</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://i.pinimg.com/originals/42/db/94/42db9482c67285d60906050887a124d5.jpg" />
-              <input type="radio" id="fashion-q" value="goyard">
-            </label>
-            <h3>Goyard</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://i.pinimg.com/originals/4b/46/0a/4b460acf7267393f55e3c5d58641497e.jpg" />
-              <input type="radio" id="fashion-q" value="hermes">
-            </label>
-            <h3>Hermès</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstJwaV63fnU52fvlmxMP8mMD-gKaT4UFXjvnEgdRPKArr-UBG" />
-              <input type="radio" id="fashion-q" value="givency">
-            </label>
-            <h3>Givenchy</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Baudelaire quote -->
-    <section class="question" id="baudelaire">
-      <h2 class="question-h">Choose a Baudelaire quote:</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>“The beautiful is always bizarre.”</h3>
-              <input type="radio" id="baudelaire-q" value="beautiful-bizzare">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“I am a cemetery by the moon unblessed.”</h3>
-              <input type="radio" id="baudelaire-q" value="cemetary">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“A multitude of small delights constitute happiness”</h3>
-              <input type="radio" id="baudelaire-q" value="delights">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>“I have felt the wind on the wing of madness.”</h3>
-              <input type="radio" id="baudelaire-q" value="wind">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“Even when she walks one would believe that she dances.”</h3>
-              <input type="radio" id="baudelaire-q" value="dance">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“An oasis of horror in a desert of boredom.”</h3>
-              <input type="radio" id="baudelaire-q" value="oasis">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>"It is the hour to be drunken!"</h3>
-              <input type="radio" id="baudelarie-q" value="drunk">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“Music fathoms the sky.”</h3>
-              <input type="radio" id="baudelaire-q" value="music">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“Common sense tells us that the things of the earth exist only a little, and that true reality is only in dreams.”</h3>
-              <input type="radio" id="french-q" value="fluent">
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Study spot -->
-    <section class="question" id="study">
-      <h2 class="question-h">What's your favorite study spot?</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://home.dartmouth.edu/sites/default/files/styles/header_image/public/sanborn-library-slide_0.jpg?itok=3hiDbq1q" />
-              <input type="radio" id="study-q" value="sanborn">
-            </label>
-            <h3>Sanborn</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://i.imgur.com/hIZcJUu.gif" />
-              <input type="radio" id="study-q" value="what-studying">
-            </label>
-            <h3>Studying, what's that??</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF62_hVTHCHL5zwqJA9MtcM0oozJnQT3y-CPjXUVi9rdfujjn5eA" />
-              <input type="radio" id="study-q" value="blobby">
-            </label>
-            <h3>Blobby</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://www.vsba.com/wp-content/gallery/dartmouth-baker-berry-library/dartmouth-baker-berry-library-03.jpg" />
-              <input type="radio" id="study-q" value="ffb">
-            </label>
-            <h3>FFB</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://www.dartmouth.edu/~gallery/seasons/spring/images/0403-2.jpg" />
-              <input type="radio" id="study-q" value="green">
-            </label>
-            <h3>The Green</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://www.dartmouth.edu/~dartmouthdirect/wp-content/uploads/14194395246_27c835a2c9_k-1024x683.jpg" />
-              <input type="radio" id="study-q" value="sudikoff">
-            </label>
-            <h3>Sudikoff</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://www.pcconstruction.com/assets/education-and-campus/DartmouthCollege-Hitchcock-001.jpg" />
-              <input type="radio" id="study-q" value="room">
-            </label>
-            <h3>My room (we all wish our dorm rooms looked like this)</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://s3-media2.fl.yelpcdn.com/bphoto/NAXUjGHyvtN1bzTQ2bR8dA/348s.jpg" />
-              <input type="radio" id="study-q" value="starbucks">
-            </label>
-            <h3>Starbucks, for the bougie</h3>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://i1.kym-cdn.com/photos/images/original/001/218/908/247.gif" />
-              <input type="radio" id="study-q" value="genuis">
-            </label>
-            <h3>I don't need to study</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Emoji -->
-    <section class="question" id="emoji">
-      <h2 class="question-h">Pick an emoji:</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sunglasses_Emoji_be26cc0a-eef9-49e5-8da2-169bb417cc0b_large.png?v=1480481057" />
-              <input type="radio" id="emoji-q" value="sunglasses">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Peach_Emoji_large.png?v=1480481064" />
-              <input type="radio" id="emoji-q" value="peach">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Loudly_Crying_Face_Emoji_large.png?v=1480481054" />
-              <input type="radio" id="emoji-q" value="crying">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="http://www.pngall.com/wp-content/uploads/2016/06/Trash-Can-PNG-Image.png" />
-              <input type="radio" id="emoji-q" value="trash">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://www.magic-emoji.com/emoji/images/275_emoji_iphone_evergreen_tree.png" />
-              <input type="radio" id="emoji-q" value="tree">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smirk_Face_Emoji_large.png?v=1480481057" />
-              <input type="radio" id="emoji-q" value="smirk">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Thumbs_Up_Sign_Emoji_Icon_ios10_grande.png?v=1513336433" />
-              <input type="radio" id="emoji-q" value="thumbs-up">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://i.pinimg.com/originals/6c/ce/aa/6cceaa570a325131aee10e54b96ab8eb.png" />
-              <input type="radio" id="emoji-q" value="money">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Praying_Emoji_ios10_020ec88e-ee33-496d-a95a-df23243cebf4_grande.png?v=1513249397" />
-              <input type="radio" id="emoji-q" value="clap">
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Frenchy Movie -->
-    <section class="question" id="movies">
-      <h2 class="question-h">Pick a movie set in France or Paris:</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="http://mrwgifs.com/wp-content/uploads/2013/07/I-Will-Find-You-And-I-Will-Kill-You-Liam-Neeson-In-Taken.gif" />
-              <input type="radio" id="movie-q" value="taken">
-              <h3>Taken</h3>
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://2.bp.blogspot.com/-CyGrv3qv-1g/UyX4mGxxsEI/AAAAAAAADt0/-BwVv0qciZs/s1600/tumblr_mwbf1tOhtm1sc6mj7o1_500.gif" />
-              <input type="radio" id="movie-q" value="ratatouille">
-              <h3>Ratatouille</h3>
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://media.giphy.com/media/qxqbogi4xSzFC/giphy.gif" />
-              <input type="radio" id="movie-q" value="amelie">
-              <h3>Amélie</h3>
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="http://images4.fanpop.com/image/photos/24200000/Johnny-Depp-as-Roux-in-Chocolat-johnny-depp-24209184-500-200.gif" />
-              <input type="radio" id="movie-q" value="taken">
-              <h3>Chocolat</h3>
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://i1.wp.com/setinparis.com/wp-content/uploads/2017/12/SWP2l.gif?fit=500%2C269&ssl=1" />
-              <input type="radio" id="movie-q" value="midnight">
-              <h3>Midnight in Paris</h3>
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://78.media.tumblr.com/32e0871694cee7bae54fb267e88aac1f/tumblr_otdqhxdnJy1qkbx7ao1_500.gif" />
-              <input type="radio" id="movie-q" value="dunkirk">
-              <h3>Dunkirk</h3>
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="http://digitalspyuk.cdnds.net/16/35/480x202/gallery-1472742122-moulin-rouge.gif" />
-              <input type="radio" id="movie-q" value="moulin-rouge">
-              <h3>Moulin Rouge</h3>
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://images.amcnetworks.com/ifc.com/wp-content/uploads/2016/02/Jason-Bourne-3.gif" />
-              <input type="radio" id="movie-q" value="bourne">
-              <h3>The Bourne Identity</h3>
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://media.giphy.com/media/UB10xM91wKCvS/giphy.gif" />
-              <input type="radio" id="movie-q" value="hunchback">
-              <h3>The Hunchback of Notre Dame</h3>
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Color -->
-    <section class="question" id="colors">
-      <h2 class="question-h">Choose a color:</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://i.pinimg.com/736x/36/00/44/3600446e1e44740e8e4bf370656c769b--fashion-heels-essie.jpg" />
-              <input type="radio" id="color-q" value="red">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://vignette.wikia.nocookie.net/joke-battles/images/5/5a/Black.jpg/revision/latest?cb=20161223050425" />
-              <input type="radio" id="color-q" value="black">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="http://www.solidbackgrounds.com/images/2880x1800/2880x1800-royal-blue-traditional-solid-color-background.jpg" />
-              <input type="radio" id="color-q" value="royal">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://cdn.shopify.com/s/files/1/0182/8937/products/Pastel_Yellow_Cotton_Necktie_2_800x.jpg?v=1442382475" />
-              <input type="radio" id="color-q" value="yellow">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0313/0881/rrOff-white_F6ECC3_matches_Fretting-for-Klimt-on-off-white_shop_preview.jpg" />
-              <input type="radio" id="color-q" value="off">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://s3.amazonaws.com/cdn.yourartsupplies.com/images/large/olive-green-lite.jpg" />
-              <input type="radio" id="color-q" value="olive">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <img src="https://static1.squarespace.com/static/588bab1086e6c0ffe0e62b3a/588bbb3459cc68c61c882d1c/588de2009f74563ea54ab42c/1485693441134/light+blue.jpg?format=500w" />
-              <input type="radio" id="color-q" value="blue">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://i.pinimg.com/originals/98/c5/c2/98c5c2472423a96af95eed38d168943d.png" />
-              <input type="radio" id="color-q" value="orange">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <img src="https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0490/1184/g_lilac_solild_shop_preview.jpg" />
-              <input type="radio" id="color-q" value="purple">
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Pick a Kanye lyric -->
-    <section class="question" id="kanye">
-      <h2 class="question-h">Choose a Kanye lyric:</h2>
-      <div class="answers">
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>“Bought more jewelry, more Louis V., my momma couldn’t get through to me”</h3>
-              <input type="radio" id="kanye-q" value="louis-v">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“Let’s go on a living free, they say the best things in life are free”</h3>
-              <input type="radio" id="kanye-q" value="free">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“I know I act a fool but I promise you I’m going back to school”</h3>
-              <input type="radio" id="kanye-q" value="fool">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>“You got a new friend, well I got homies, but in the end it’s still so lonely”</h3>
-              <input type="radio" id="kanye-q" value="lonely">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“We at war, we at war with terrorism, racism, but most of all, we at war with ourselves”</h3>
-              <input type="radio" id="kanye-q" value="war">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“I’ll never be a picture-perfect Beyoncé”</h3>
-              <input type="radio" id="kanye-q" value="beyonce">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="answer">
-            <label>
-              <h3>“I am a God, even though I’m a man of God, my whole life in the hand of God”</h3>
-              <input type="radio" id="kanye-q" value="god">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“Reach for the stars so if you fall you land on a cloud”</h3>
-              <input type="radio" id="kanye-q" value="cloud">
-            </label>
-          </div>
-          <div class="answer">
-            <label>
-              <h3>“Back before anybody wanted K. West beats, me and my girl split the bucket at KFC”</h3>
-              <input type="radio" id="kanye-q" value="kfc">
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
