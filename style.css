@@ -38,12 +38,12 @@ img {
   width: 33%;
 }
 
-#kaf img, #fashion img, #study img, #emoji img {
+#kaf img, #fashion img, #study img, #emoji img, #colors img {
   height: 25vh;
   width: 15vw;
 }
 
-#major img {
+#major img, #movies img {
   width: 15vw;
   height: 20vh;
 }
