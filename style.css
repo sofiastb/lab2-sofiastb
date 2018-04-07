@@ -1,0 +1,54 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Questions */
+.question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.answers {
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.answer {
+  height: 33vh;
+  width: 33%;
+}
+
+#kaf img, #fashion img {
+  height: 25vh;
+  width: 15vw;
+}
+
+#major img {
+  width: 15vw;
+  height: 20vh;
+}
+
+#fashion .row:nth-last-child(2) .answer:nth-last-child(2) img {
+  height: auto;
+  width: 15vw;
+}
