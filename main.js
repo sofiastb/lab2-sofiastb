@@ -3,7 +3,7 @@ $(document).ready(function() {
   var questionClasses = ["kaf-q",
                         "major-q",
                         "french-q",
-                        "fashion-q",
+                        "font-q",
                         "baudelaire-q",
                         "study-q",
                         "emoji-q",
@@ -36,8 +36,44 @@ $(document).ready(function() {
   $('#calculate').on('click', function(e) {
     // gather all checked radio-button values
     var choices = $("input[type='radio']:checked").map(function(i, radio) {
-      console.log($(radio).val());
       return $(radio).val();
     }).toArray();
+
+    var total = 0;
+
+    Array.prototype.forEach.call(choices, function(e) {
+      total += parseInt(e, 10);
+    });
+
+    /* Hard Coded Values:
+    1 = Eiffel Tower
+    2 = Palais du Tokyo
+    3 = Notre Dame
+    4 = Sacré Cœur
+    5 = The Louvre
+    6 = Arc de Triomphe
+    7 = Panthéon
+    8 = Moulin Rouge
+    9 = Centre Pomidou
+    */
+    if (total >= 1 && total <= 10) {
+      console.log("Eiffel Tower");
+    } else if (total >= 11 && total <= 20) {
+      console.log("Palais du Tokyo");
+    } else if (total >= 21 && total <= 30) {
+      console.log("Notre Dame");
+    } else if (total >= 31 && total <= 40) {
+      console.log("Sacré Cœur");
+    } else if (total >= 41 && total <= 50) {
+      console.log("The Louvre");
+    } else if (total >= 51 && total <= 60) {
+      console.log("Arc de Triomphe");
+    } else if (total >= 61 && total <= 70) {
+      console.log("Panthéon");
+    } else if (total >= 71 && total <= 80) {
+      console.log("Moulin Rouge");
+    } else {
+      console.log("Centre Pompidou");
+    }
   });
 });

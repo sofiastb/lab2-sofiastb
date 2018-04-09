@@ -154,8 +154,8 @@ button {
   background-image: url(http://www.vivaiacciarri.it/immagini/fr.jpg);
 }
 
-#fashion-h {
-  background-image: url(https://lovelace-media.imgix.net/getty/475561119.jpg);
+#font-h {
+  background-image: url(https://www.replacementlaptopkeys.com/product_images/uploaded_images/screen-shot-2016-12-12-at-10.51.08-pm.png);
 }
 
 #baudelaire-h {
@@ -198,7 +198,7 @@ button {
   width: 80%;
 }
 
-#fashion label {
+#font label {
   display: flex;
   justify-content: center;;
 }
@@ -207,27 +207,18 @@ button {
   height: 27vh;
 }
 
-#kaf img, #fashion img, #study img, #colors img {
+#kaf img, #study img, #font img, #colors img {
   height: 40vh;
   width: 100%;
 }
 
-#colors label {
+#colors label{
   height: auto!important;
 }
 
 #major img, #movies img {
   height: 20vh;
   width: 100%;
-}
-
-#fashion .row:nth-last-child(2) .answer:nth-last-child(2) img {
-  align-self: center;
-  height: 21vh;
-}
-
-#fashion .row:nth-last-child(2) .answer:nth-last-child(2) label {
-  height: 100%;
 }
 
 @media only screen and (max-width: 860px) {
