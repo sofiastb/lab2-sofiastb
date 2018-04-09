@@ -46,14 +46,34 @@ p {
 }
 
 label {
-  height: 90%;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+button {
+  align-self: center;
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  height: 100px;
+  margin-bottom: 20vh;
+  width: 70%;
 }
 
 .cover {
   background-size: cover;
   display: flex;
   justify-content: center;
+}
+
+
+.yellow {
+  background-color: yellow;
+  box-shadow: 0px 0px 30px yellow;
 }
 
 #title {
@@ -113,7 +133,7 @@ label {
 }
 
 .answer:hover {
-  box-shadow: 0px 0px 30px grey;
+  box-shadow: 0px 0px 30px black;
 }
 
 .q-h {
@@ -169,12 +189,11 @@ label {
 }
 
 #emoji label {
-  height: 33vh;
-  padding: 1rem;
   width: 100%;
 }
 
 #emoji img {
+  align-self: center;
   height: auto;
   width: 80%;
 }
@@ -193,6 +212,10 @@ label {
   width: 100%;
 }
 
+#colors label {
+  height: auto!important;
+}
+
 #major img, #movies img {
   height: 20vh;
   width: 100%;
@@ -201,4 +224,38 @@ label {
 #fashion .row:nth-last-child(2) .answer:nth-last-child(2) img {
   align-self: center;
   height: 21vh;
+}
+
+#fashion .row:nth-last-child(2) .answer:nth-last-child(2) label {
+  height: 100%;
+}
+
+@media only screen and (max-width: 860px) {
+  h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .question:last-child {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    margin-bottom: 1rem;
+  }
+
+  .row {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .row:first-child {
+    margin-top: 1rem;
+  }
+
+  .answer {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
 }
