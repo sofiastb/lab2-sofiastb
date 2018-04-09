@@ -6,7 +6,7 @@ Sofia Stanescu-Bellu
 ## Which Parisian landmark are you? 🇫🇷
 
 ### Description
-Ever wanted to know if you're more like the Eiffel Tower than Notre Dame? Now's your chance! My quiz determines which Parisian landmark is your spirit animal, errr spirit building?
+Ever wanted to know if you're more like the Eiffel Tower than Notre Dame? Now's your chance! My quiz determines which Parisian landmark is your spirit animal, errr spirit building? The quiz can be found at [https://dartmouth-cs52-18s.github.io/lab2-sofiastb/](https://dartmouth-cs52-18s.github.io/lab2-sofiastb/)
 
 ### What worked
 I had a lot of fun coming up with the content for this assignment and I think the styling worked pretty well overall. I'm definitely much more comfortable with CSS than I was after the first lab. Mobile responsiveness also went pretty well – it's surprising how responsive flex boxes are inherently and I only needed one `@media` query to make the website responsive.
