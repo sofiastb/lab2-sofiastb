@@ -24,8 +24,10 @@ $(document).ready(function() {
       // when a question is clicked
       $(q).on('click', function() {
         // highlight it yellow and make the other questions not highlighted
+        $(this).siblings('.overlay').removeClass('visible');
         $(this).parent().addClass('yellow');
         $(questions).not(this).parent().removeClass('yellow');
+        $(questions).not(this).siblings('.overlay').addClass('visible');
       });
     });
   });
@@ -58,7 +60,7 @@ $(document).ready(function() {
       $('#result-image').attr('src', 'https://cdn.shopify.com/s/files/1/1061/1924/files/Sad_Face_Emoji.png?9898922749706957214');
       $('.popup').addClass('view');
     } else {  // compute score
-      $('#result-image').css('width', '60%');
+      $('#result-image').css('width', '50%');
       /* Hard Coded Values:
       1 = Eiffel Tower
       2 = Palais du Tokyo
@@ -71,7 +73,6 @@ $(document).ready(function() {
       9 = Centre Pomidou
       */
       if (total >= 1 && total <= 10) {
-        console.log('Eiffel Tower');
         $('#result-title').text('You got: Eiffel Tower');
         $('#result-image').attr('src', 'https://amp.thisisinsider.com/images/58d919eaf2d0331b008b4bbd-750-562.jpg');
       } else if (total >= 11 && total <= 20) {
