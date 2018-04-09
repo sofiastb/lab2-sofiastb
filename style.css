@@ -64,6 +64,12 @@ button {
   width: 70%;
 }
 
+i {
+  align-self: flex-end;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
 .cover {
   background-size: cover;
   display: flex;
@@ -221,6 +227,54 @@ button {
   width: 100%;
 }
 
+/*
+Modal
+Created with the help of https://www.w3schools.com/howto/howto_css_modals.asp
+*/
+.popup {
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.result {
+    align-self: center;
+    background-color: white;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 10vh 10vw;
+    width: 80%;
+}
+
+.result h1 {
+  color: black;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  text-shadow: none;
+}
+
+#result-image {
+  align-self: center;
+  background-size: cover;
+  height: auto;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 30%;
+}
+
+.view {
+  display: flex;
+}
+
+/* Media queries */
 @media only screen and (max-width: 860px) {
   h1 {
     padding-left: 1rem;
