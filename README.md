@@ -15,8 +15,13 @@ I had a lot of fun coming up with the content for this assignment and I think th
 The Javascript/jQuery went pretty well for the most part, but getting the chosen radio box to change its state and getting the other, non-selected radio boxes to change their states as well was tricky. I had to play around with `.forEach()`, `.not()`, `.parent()`, and `.siblings()` to get everything working properly. Overlaying things was also a bit tricky – getting the `z-index` and positioning correctly took me awhile.
 
 ### Screencaps
+Here's a demo of the selected and unselected states:
 ![selected demo](./assets/selected_and_unselected.png)
+
+Here's a demo of mobile responsiveness:
 ![mobile responsiveness](./assets/mobile_responsiveness.png)
+
+And here's a demo of the result modal:
 ![result modal](./assets/result.png)
 
 ## Sources
